@@ -1,0 +1,39 @@
+<div ng-include="'partials/navbar.html'"></div>
+
+<div class="row">
+  <div class="col-sm-12">
+
+    <form class="form" name="form" novalidate>
+      
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="name" ng-model="spell.name" class="form-control"/>
+
+        <label>Description</label>
+        <input type="textarea" name="description"  ng-model="spell.description" class="form-control"/>
+
+        <label>Specialization</label>
+        <input type="text" name="specialization" ng-model="spell.specialization" class="form-control"/>
+
+        <label>Major/Minor</label>
+        <input type="text" name="majorMinor" ng-model="spell.majorMinor" class="form-control"/>
+
+        <label>Category</label>
+        <input type="text" name="category" ng-model="spell.category" class="form-control"/>
+
+        <label>Attributes</label>
+        <input type="text" name="tags" ng-model="spell.tags" class="form-control"/>
+
+        <label>XP cost</label>
+        <input type="number" name="xp" ng-model="spell.xp" class="form-control"/>
+      </div>
+
+      <button class="btn btn-lg btn-primary" type="submit" ng-click="update()">Save changes</button>
+    </form>
+
+    <br><br>
+    <pre>
+      {{ spell }}
+    </pre>
+  </div>
+</div>

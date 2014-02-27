@@ -1,0 +1,13 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div class="row marketing" ng-controller="SingleSpellCtrl">
+	<p><strong>Name: </strong> {{Spells.name}}</p>
+	<p><strong>Description: </strong> {{Spells.description}}</p>
+	<p><strong>Specialization: </strong> {{Spells.specialization}}</p>
+	<p><strong>Major/Minor: </strong> {{Spells.majorMinor}}</p>
+	<p><strong>Category: </strong> {{Spells.category}}</p>
+	<p><strong>Attributes: </strong> {{Spells.tags}}</p>
+	<p><strong>XP cost: </strong> {{Spells.xp}}</p>
+
+	<a href="/allspells/{{Spells._id}}/edit">Edit</a>
+</div>

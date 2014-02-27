@@ -1,0 +1,12 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div class="row marketing">
+  <div ng-repeat="spell in Spells">
+      <p>{{spell.name}} <a ng-href="/allspells/{{spell._id}}/edit">edit</a></p>
+      
+  </div>
+</div>
+
+<div class="footer">
+  <p>♥ from the Yeoman team</p>
+</div>
